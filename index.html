@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Albin Joseph Daniel | Cyber Security Specialist Portfolio</title>
+    <meta name="description" content="Professional portfolio of Albin Joseph Daniel, Cyber Security Specialist & BCA student at Kristu Jayanti College. Core skills in pentesting, network security, and secure development.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;900&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- MAIN APP WRAPPER -->
+    <div id="app-wrapper">
+        
+        <!-- HEADER / STATUS BAR -->
+        <header id="tactical-header">
+            <div class="header-left">
+                <div class="logo-area">
+                    <span class="logo-red">ALBIN</span>
+                    <span class="logo-white">JOSEPH DANIEL</span>
+                </div>
+                <div class="status-indicator">
+                    <span class="pulse-dot green"></span>
+                    <span class="status-label">OPEN FOR OPPORTUNITIES</span>
+                </div>
+            </div>
+            
+            <div class="header-center dashboard-stats">
+                <div class="stat-box hide-mobile">
+                    <span class="stat-title">ROLE:</span>
+                    <span class="stat-value text-red">CYBER SECURITY SPECIALIST</span>
+                </div>
+                <div class="stat-box hide-tablet">
+                    <span class="stat-title">BASE:</span>
+                    <span class="stat-value">BENGALURU, INDIA</span>
+                </div>
+                <div class="stat-box">
+                    <span class="stat-title">SYSTEM CLOCK:</span>
+                    <span class="stat-value" id="tactical-clock">00:00:00</span>
+                </div>
+            </div>
+            
+            <div class="header-right">
+                <a href="Albin_Joseph_Daniel_Resume.pdf" download class="cyber-btn outline-btn hide-mobile" style="margin-right: 12px;">
+                    <span class="btn-text">DOWNLOAD RESUME</span>
+                </a>
+                <a href="#contact" class="cyber-btn red-btn header-contact-btn hide-mobile">
+                    <span class="btn-text">GET IN TOUCH</span>
+                </a>
+            </div>
+        </header>
+
+        <!-- CONTAINER FOR SIDEBAR & MAIN DISPLAY -->
+        <div class="layout-container">
+            
+            <!-- SIDEBAR NAVIGATION (TACTICAL TERMINAL) -->
+            <aside id="tactical-sidebar">
+                <div class="sidebar-header">
+                    <p class="panel-tag">[ DIRECTORY MENU ]</p>
+                    <h3>PORTFOLIO ACCESS</h3>
+                </div>
+                
+                <nav class="sidebar-nav">
+                    <ul>
+                        <li>
+                            <a href="#about" class="nav-link active" data-target="about">
+                                <span class="nav-num">01_</span>
+                                <span class="nav-label">ABOUT_ME</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#experience" class="nav-link" data-target="experience">
+                                <span class="nav-num">02_</span>
+                                <span class="nav-label">EXPERIENCE_EXP</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#projects" class="nav-link" data-target="projects">
+                                <span class="nav-num">03_</span>
+                                <span class="nav-label">SECURITY_PROJECTS</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#skills" class="nav-link" data-target="skills">
+                                <span class="nav-num">04_</span>
+                                <span class="nav-label">SKILLS_VAULT</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#contact" class="nav-link" data-target="contact">
+                                <span class="nav-num">05_</span>
+                                <span class="nav-label">CONTACT_SECURE</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <div class="sidebar-watermark-panel hide-tablet">
+                    <!-- Subtle clean outline Dali Mask as vector icon -->
+                    <div class="watermark-svg-container">
+                        <svg viewBox="0 0 100 130" class="sidebar-dali-svg" aria-label="Branding Icon">
+                            <!-- Face outline -->
+                            <path d="M50,15 C20,15 15,45 15,70 C15,95 28,120 50,120 C72,120 85,95 85,70 C85,45 80,15 50,15 Z" fill="none" stroke="#262c3a" stroke-width="2"/>
+                            <!-- Eyes / Brows -->
+                            <path d="M30,55 C35,50 43,50 45,55" fill="none" stroke="#262c3a" stroke-width="1.5"/>
+                            <path d="M70,55 C65,50 57,50 55,55" fill="none" stroke="#262c3a" stroke-width="1.5"/>
+                            <circle cx="37" cy="58" r="2.5" fill="#262c3a"/>
+                            <circle cx="63" cy="58" r="2.5" fill="#262c3a"/>
+                            <!-- Iconic Mustache -->
+                            <path d="M50,85 C42,85 28,88 22,78 C25,75 32,73 40,78 C45,80 48,84 50,85 C52,84 55,80 60,78 C68,73 75,75 78,78 C72,88 58,85 50,85 Z" fill="none" stroke="#262c3a" stroke-width="1.5"/>
+                            <path d="M50,85 C45,85 35,95 20,85 C30,105 45,100 50,92 C55,100 70,105 80,85 C65,95 55,85 50,85 Z" fill="none" stroke="#bf1120" stroke-width="1.5"/>
+                            <!-- Nose -->
+                            <path d="M47,60 L50,75 L53,60" fill="none" stroke="#262c3a" stroke-width="1.5"/>
+                            <!-- Mouth -->
+                            <path d="M40,95 Q50,102 60,95" fill="none" stroke="#262c3a" stroke-width="1.5"/>
+                        </svg>
+                    </div>
+                </div>
+
+                <div class="sidebar-footer">
+                    <p class="footer-small">ALBIN JOSEPH DANIEL © 2026</p>
+                </div>
+            </aside>
+
+            <!-- MAIN DISPLAY PANELS -->
+            <main id="tactical-viewer">
+                
+                <!-- SECTION 1: ABOUT ME -->
+                <section id="about" class="viewer-section active">
+                    <div class="section-banner">
+                        <span class="sector-code">SECTOR 01 // IDENTITY</span>
+                        <h2>PROFESSIONAL DOSSIER</h2>
+                    </div>
+
+                    <div class="dossier-grid">
+                        <div class="dossier-photo-card">
+                            <div class="photo-frame">
+                                <div class="scan-laser"></div>
+                                <div class="corner-target tl"></div>
+                                <div class="corner-target tr"></div>
+                                <div class="corner-target bl"></div>
+                                <div class="corner-target br"></div>
+                                <img src="assets/profile.png" alt="Albin Joseph Daniel Photo" class="profile-img">
+                            </div>
+                            <div class="dossier-status">
+                                <div class="status-indicator-block">
+                                    <span class="label">STATUS:</span>
+                                    <span class="value active-agent">READY FOR HIRE</span>
+                                </div>
+                                <div class="status-indicator-block">
+                                    <span class="label">SPECIALIZATION:</span>
+                                    <span class="value text-red">INFRASTRUCTURE SECURITY</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="dossier-details-card">
+                            <div class="card-header">
+                                <span class="badge red-badge">VERIFIED SPECIALIST</span>
+                                <h3>ALBIN JOSEPH DANIEL</h3>
+                            </div>
+                            <div class="card-body">
+                                <div class="metadata-grid">
+                                    <div class="meta-item">
+                                        <span class="meta-label">CURRENT LOCATION:</span>
+                                        <span class="meta-value">Kannur, Kerala, India</span>
+                                    </div>
+                                    <div class="meta-item">
+                                        <span class="meta-label">ACADEMIC PREPARATION:</span>
+                                        <span class="meta-value">BCA in Cyber Security</span>
+                                    </div>
+                                    <div class="meta-item">
+                                        <span class="meta-label">AFFILIATION:</span>
+                                        <span class="meta-value">Kristu Jayanti College, Bengaluru</span>
+                                    </div>
+                                    <div class="meta-item">
+                                        <span class="meta-label">GRADUATION:</span>
+                                        <span class="meta-value">2027 (Expected)</span>
+                                    </div>
+                                </div>
+
+                                <div class="dossier-bio-block">
+                                    <h4>PROFESSIONAL SUMMARY</h4>
+                                    <p>
+                                        I am a motivated Cyber Security student pursuing my Bachelor of Computer Applications (BCA) specializing in Cyber Security at Kristu Jayanti College, Bengaluru (currently in the 5th semester). I possess solid practical foundation in vulnerability assessment, web application security testing, and ethical hacking methodologies.
+                                    </p>
+                                    <p>
+                                        I have demonstrated my hands-on expertise through a dedicated cybersecurity internship, completing 30+ PortSwigger Web Security Academy labs, and TryHackMe practical modules. I have active experience identifying and mitigating vulnerabilities such as SQL Injection, Cross-Site Scripting (XSS), Authentication Flaws, Server-Side Request Forgery (SSRF), and Path Traversal using key tools including Burp Suite, Kali Linux, and Nmap.
+                                    </p>
+                                    <p>
+                                        I am passionate about network intrusion analysis, penetration testing, defensive programming, and assisting organizations in minimizing their digital risk footprint.
+                                    </p>
+                                    <div class="dossier-actions" style="margin-top: 25px;">
+                                        <a href="Albin_Joseph_Daniel_Resume.pdf" download class="cyber-btn red-btn">
+                                            <span class="btn-text">DOWNLOAD COMPLETE RESUME (PDF)</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- SECTION 2: EXPERIENCE -->
+                <section id="experience" class="viewer-section">
+                    <div class="section-banner">
+                        <span class="sector-code">SECTOR 02 // CAREER PATHWAY</span>
+                        <h2>PROFESSIONAL EXPERIENCE & EDUCATION</h2>
+                    </div>
+
+                    <div class="timeline-container">
+                        <!-- Technical Internship -->
+                        <div class="timeline-checkpoint">
+                            <div class="checkpoint-icon">
+                                <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+                            </div>
+                            <div class="checkpoint-content">
+                                <div class="checkpoint-header">
+                                    <span class="checkpoint-time">MAY 2026 - JUNE 2026</span>
+                                    <h3>CYBER SECURITY INTERN</h3>
+                                    <span class="checkpoint-institution">TechCake (1 Month Offline Internship)</span>
+                                </div>
+                                <div class="checkpoint-body">
+                                    <p class="phase-subtitle text-red">SECURITY COMPLIANCE & PENETRATION TESTING OPERATIONS</p>
+                                    <ul class="styled-list">
+                                        <li>Executed scheduled vulnerability assessment processes and web application security testing inside isolated sandbox networks.</li>
+                                        <li>Leveraged security intelligence suites such as Kali Linux, Burp Suite, and Nmap for network reconnaissance, scanning, and vulnerability validation.</li>
+                                        <li>Assessed and verified target systems against OWASP Top 10 vulnerabilities.</li>
+                                        <li>Conducted comprehensive system enumeration, target analysis, and threat identification activities.</li>
+                                        <li>Prepared detailed technical vulnerability reports and remediation guidance to optimize defensive security postures.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Academic Groundwork -->
+                        <div class="timeline-checkpoint">
+                            <div class="checkpoint-icon">
+                                <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path><line x1="12" y1="11" x2="12" y2="17"></line><line x1="9" y1="14" x2="15" y2="14"></line></svg>
+                            </div>
+                            <div class="checkpoint-content">
+                                <div class="checkpoint-header">
+                                    <span class="checkpoint-time">2024 - PRESENT</span>
+                                    <h3>BACHELOR OF COMPUTER APPLICATIONS (BCA) - CYBER SECURITY</h3>
+                                    <span class="checkpoint-institution">Kristu Jayanti College, Bengaluru</span>
+                                </div>
+                                <div class="checkpoint-body">
+                                    <p class="phase-subtitle text-red">CORE ACADEMIC CURRICULUM</p>
+                                    <p>
+                                        Currently maintaining high standards in the 5th Semester of BCA specializing in Cyber Security (Expected Graduation: 2027). The curriculum focuses on Network Security Architectures, Secure Coding Principles, Database Security Implementations (SQL), Linux/Windows Administration, and Cloud Defensive Operations.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- SECTION 3: PROJECTS -->
+                <section id="projects" class="viewer-section">
+                    <div class="section-banner">
+                        <span class="sector-code">SECTOR 03 // PORTFOLIO</span>
+                        <h2>SECURITY PROJECTS & LABS</h2>
+                    </div>
+
+                    <div class="operations-grid">
+                        
+                        <!-- PROJECT 1: PASSWORD STRENGTH ANALYZER -->
+                        <div class="operation-card interactive-card">
+                            <div class="operation-header">
+                                <span class="op-status completed">INTERACTIVE WIDGET</span>
+                                <h3>Password Strength Analyzer</h3>
+                                <p class="op-sub">Python-based Logic Refactored to JavaScript</p>
+                            </div>
+                            <div class="operation-body">
+                                <p class="op-desc">
+                                    A functional password testing module. It evaluates character diversity, character lengths, calculated entropy (bits), and outputs standard security classifications. Test a password below:
+                                </p>
+                                
+                                <div class="interactive-analyzer-box">
+                                    <div class="input-wrapper">
+                                        <input type="password" id="analyzer-input" placeholder="Type password here to analyze..." autocomplete="off">
+                                        <button id="toggle-password-visibility" type="button">SHOW</button>
+                                    </div>
+                                    
+                                    <div class="analysis-results">
+                                        <div class="stat-line">
+                                            <span>BRUTEFORCE RESILIENCE:</span>
+                                            <span id="crack-time" class="value text-red">INSTANT</span>
+                                        </div>
+                                        <div class="stat-line">
+                                            <span>SHANNON ENTROPY:</span>
+                                            <span id="entropy-value" class="value">0 bits</span>
+                                        </div>
+                                        <div class="progress-bar-container">
+                                            <div class="progress-fill" id="strength-fill"></div>
+                                        </div>
+                                        <div class="security-status-badge" id="security-badge">
+                                            WEAK
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- PROJECT 2: PORTSWIGGER LABS -->
+                        <div class="operation-card">
+                            <div class="operation-header">
+                                <span class="op-status badge-completed">30+ LABS SOLVED</span>
+                                <h3>PortSwigger Web Security Academy</h3>
+                                <p class="op-sub">Web Application Exploitation & Hardening</p>
+                            </div>
+                            <div class="operation-body">
+                                <p class="op-desc">
+                                    Demonstrated vulnerability verification on PortSwigger's environment. Identified, exploited, and resolved web flaws including:
+                                </p>
+                                <div class="exploit-tags">
+                                    <span class="tag">SQL Injection</span>
+                                    <span class="tag">Cross-Site Scripting (XSS)</span>
+                                    <span class="tag">SSRF</span>
+                                    <span class="tag">Authentication Flaws</span>
+                                    <span class="tag">Path Traversal</span>
+                                    <span class="tag">File Upload Vulnerabilities</span>
+                                    <span class="tag">Information Disclosure</span>
+                                </div>
+                                <div class="terminal-log-mini">
+                                    <p class="term-line green">> PATH_TRAVERSAL LAB RESOLVED ... [SUCCESS]</p>
+                                    <p class="term-line green">> SQL_INJECTION EXTRACT PAYLOAD COMPLETED ... [OK]</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- PROJECT 3: TRYHACKME LABS -->
+                        <div class="operation-card">
+                            <div class="operation-header">
+                                <span class="op-status badge-completed">5+ ROOMS COMPLETED</span>
+                                <h3>TryHackMe Defensive & Offensive Rooms</h3>
+                                <p class="op-sub">Practical Penetration Testing & Linux Hardening</p>
+                            </div>
+                            <div class="operation-body">
+                                <p class="op-desc">
+                                    Successfully resolved environments focusing on system reconnaissance, enumeration, services analysis, and privilege escalation strategies.
+                                </p>
+                                <div class="exploit-tags">
+                                    <span class="tag">Linux Enumeration</span>
+                                    <span class="tag">Burp Suite Operations</span>
+                                    <span class="tag">Web Intrusion Testing</span>
+                                    <span class="tag">Privilege Escalation Basics</span>
+                                </div>
+                                <div class="terminal-log-mini">
+                                    <p class="term-line green">> TARGET ENUMERATION ON PORTS 80, 443 ... [DONE]</p>
+                                    <p class="term-line green">> PRIVILEGE ESCALATION VIA MISCONFIGURED SUID ... [SUCCESS]</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </section>
+
+                <!-- SECTION 4: SKILLS & CERTIFICATIONS -->
+                <section id="skills" class="viewer-section">
+                    <div class="section-banner">
+                        <span class="sector-code">SECTOR 04 // TECHNICAL RESERVES</span>
+                        <h2>SKILLS & CERTIFICATIONS</h2>
+                    </div>
+
+                    <div class="vault-container">
+                        
+                        <!-- SKILLS WITH ELEGANT GOLD METALLIC BARS -->
+                        <div class="vault-shelf-card">
+                            <h3>GOLD RESERVE (TECHNICAL SKILLS)</h3>
+                            <p class="shelf-desc">Hover or tap on a bar below to display detail notes on specific competencies.</p>
+                            
+                            <div class="gold-reserve-grid">
+                                
+                                <!-- Category 1: Cyber Security -->
+                                <div class="shelf-row">
+                                    <h4>CYBER SECURITY SPECIALTIES</h4>
+                                    <div class="gold-bars-list">
+                                        <div class="gold-bar" data-skill-detail="Evaluating system components and network topologies for security weaknesses.">
+                                            <div class="gold-shine"></div>
+                                            <span class="gold-label">Vulnerability Assessment</span>
+                                        </div>
+                                        <div class="gold-bar" data-skill-detail="Validating web server endpoint security levels against active exploitation.">
+                                            <div class="gold-shine"></div>
+                                            <span class="gold-label">Web App Security Testing</span>
+                                        </div>
+                                        <div class="gold-bar" data-skill-detail="In-depth knowledge of standard web application flaws and mitigation policies.">
+                                            <div class="gold-shine"></div>
+                                            <span class="gold-label">OWASP Top 10</span>
+                                        </div>
+                                        <div class="gold-bar" data-skill-detail="Understanding network defenses, routing protection, and firewall structures.">
+                                            <div class="gold-shine"></div>
+                                            <span class="gold-label">Network Security</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Category 2: Tools, Platforms & Programming -->
+                                <div class="shelf-row">
+                                    <h4>TOOLS, LANGUAGES & DATABASES</h4>
+                                    <div class="gold-bars-list">
+                                        <div class="gold-bar" data-skill-detail="Primary Operating System choice for ethical hacking and audits.">
+                                            <div class="gold-shine"></div>
+                                            <span class="gold-label">Kali Linux</span>
+                                        </div>
+                                        <div class="gold-bar" data-skill-detail="Intermediary proxy suite for request interception, alteration, and auditing.">
+                                            <div class="gold-shine"></div>
+                                            <span class="gold-label">Burp Suite</span>
+                                        </div>
+                                        <div class="gold-bar" data-skill-detail="Scanning target nodes, mapping ports, services, and running audits.">
+                                            <div class="gold-shine"></div>
+                                            <span class="gold-label">Nmap</span>
+                                        </div>
+                                        <div class="gold-bar" data-skill-detail="Scripting language for automation, scanning scripts, and security utilities.">
+                                            <div class="gold-shine"></div>
+                                            <span class="gold-label">Python Programming</span>
+                                        </div>
+                                        <div class="gold-bar" data-skill-detail="Solid foundation in object-oriented structures and systems (Elite Certified).">
+                                            <div class="gold-shine"></div>
+                                            <span class="gold-label">Java Programming</span>
+                                        </div>
+                                        <div class="gold-bar" data-skill-detail="Relational database queries, structure audits, and NoSQL fundamentals.">
+                                            <div class="gold-shine"></div>
+                                            <span class="gold-label">SQL & NoSQL</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <!-- Dynamic skill detail reader -->
+                            <div class="gold-bar-decoder" id="gold-decoder">
+                                <span class="decoder-label">SKILL SPECIFICATION READER:</span>
+                                <span class="decoder-text" id="gold-decoder-text">Select or hover over a skill bar to view technical notes...</span>
+                            </div>
+                        </div>
+
+                        <!-- CERTIFICATIONS SECTION -->
+                        <div class="certifications-card">
+                            <h3>VERIFIED PROFESSIONAL CLEARANCES</h3>
+                            
+                            <div class="certs-grid">
+                                
+                                <div class="cert-item">
+                                    <div class="cert-icon-box">
+                                        <span class="cert-gold-star">★</span>
+                                    </div>
+                                    <div class="cert-details">
+                                        <h4>NPTEL Elite Certification</h4>
+                                        <p>Programming in Java (Scored: 80%)</p>
+                                    </div>
+                                </div>
+
+                                <div class="cert-item">
+                                    <div class="cert-icon-box">
+                                        <span class="cert-gold-star">★</span>
+                                    </div>
+                                    <div class="cert-details">
+                                        <h4>Cisco Networking Academy</h4>
+                                        <p>CCNA: Introduction to Networks</p>
+                                    </div>
+                                </div>
+
+                                <div class="cert-item">
+                                    <div class="cert-icon-box">
+                                        <span class="cert-gold-star">★</span>
+                                    </div>
+                                    <div class="cert-details">
+                                        <h4>Cisco Networking Academy</h4>
+                                        <p>Introduction to Cybersecurity</p>
+                                    </div>
+                                </div>
+
+                                <div class="cert-item">
+                                    <div class="cert-icon-box">
+                                        <span class="cert-gold-star">★</span>
+                                    </div>
+                                    <div class="cert-details">
+                                        <h4>Red Hat Academy</h4>
+                                        <p>Linux Fundamentals (RH104)</p>
+                                    </div>
+                                </div>
+
+                                <div class="cert-item">
+                                    <div class="cert-icon-box">
+                                        <span class="cert-gold-star">★</span>
+                                    </div>
+                                    <div class="cert-details">
+                                        <h4>NASSCOM FutureSkills Prime</h4>
+                                        <p>Digital Engineering (Gold Standard Badge)</p>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </section>
+
+                <!-- SECTION 5: CONTACT -->
+                <section id="contact" class="viewer-section">
+                    <div class="section-banner">
+                        <span class="sector-code">SECTOR 05 // LINK ESTABLISHMENT</span>
+                        <h2>SECURE WIRE COMMUNICATIONS</h2>
+                    </div>
+
+                    <div class="transmission-grid">
+                        
+                        <div class="contact-dossier-card">
+                            <h3>COMMUNICATION COORDINATES</h3>
+                            <p>For inquiries, collaboration proposals, or career queries, you can establish direct contact via the secure coordinates or encrypted form panel:</p>
+                            
+                            <div class="coordinates-list">
+                                <div class="coordinate-item">
+                                    <span class="label">TELEPHONE:</span>
+                                    <span class="value"><a href="tel:+919995574581">+91 9995574581</a></span>
+                                </div>
+                                <div class="coordinate-item">
+                                    <span class="label">EMAIL ADDRESS:</span>
+                                    <span class="value"><a href="mailto:Albinjoseph6555@gmail.com">Albinjoseph6555@gmail.com</a></span>
+                                </div>
+                                <div class="coordinate-item">
+                                    <span class="label">LINKEDIN PROFILE:</span>
+                                    <span class="value"><a href="https://www.linkedin.com/in/albin-joseph-293896419" target="_blank" rel="noopener noreferrer">albin-joseph-293896419</a></span>
+                                </div>
+                                <div class="coordinate-item">
+                                    <span class="label">BASE:</span>
+                                    <span class="value">Kannur, Kerala / Bengaluru, India</span>
+                                </div>
+                            </div>
+
+                            <div class="crew-quote-block">
+                                <p class="quote">"In computer security, defenses are built on details. Clear analysis and rigorous execution ensure resilient systems."</p>
+                                <span class="quote-author">Albin Joseph Daniel</span>
+                            </div>
+                        </div>
+
+                        <div class="contact-form-card">
+                            <h3>SECURE MESSAGE TRANSMISSION</h3>
+                            
+                            <form id="heist-contact-form" action="https://formspree.io/f/Albinjoseph6555@gmail.com" method="POST" class="tactical-form">
+                                <div class="form-group">
+                                    <label for="contact-name">TRANSMITTER IDENTITY (YOUR NAME)</label>
+                                    <input type="text" id="contact-name" name="name" required placeholder="Enter your name or organization..." autocomplete="off">
+                                </div>
+                                <div class="form-group">
+                                    <label for="contact-email">RETURN COORDINATES (YOUR EMAIL)</label>
+                                    <input type="email" id="contact-email" name="email" required placeholder="Enter contact email address..." autocomplete="off">
+                                </div>
+                                <div class="form-group">
+                                    <label for="contact-message">TRANSMISSION CONTENT (MESSAGE)</label>
+                                    <textarea id="contact-message" name="message" rows="5" required placeholder="Enter message text..."></textarea>
+                                </div>
+                                
+                                <button type="submit" id="send-msg-btn" class="cyber-btn red-btn">
+                                    <span class="btn-text">TRANSMIT SECURE MESSAGE</span>
+                                </button>
+                            </form>
+
+                            <!-- Live Transmission Status Console -->
+                            <div class="transmission-console" id="form-console">
+                                <div class="console-header">
+                                    <span class="blink-led"></span>
+                                    <span class="console-title">COMMUNICATION_LINK.log</span>
+                                </div>
+                                <div class="console-body" id="form-console-body">
+                                    <p class="console-line text-yellow">> SECURE CHANNEL STANDBY. READY TO TRANSMIT...</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </section>
+
+            </main>
+        </div>
+
+        <!-- TACTICAL FOOTER (NAVBAR ON MOBILE) -->
+        <footer id="tactical-footer">
+            <nav class="mobile-nav">
+                <a href="#about" class="mobile-nav-link active" data-target="about">
+                    <span class="mobile-icon">👤</span>
+                    <span class="mobile-text">ABOUT</span>
+                </a>
+                <a href="#experience" class="mobile-nav-link" data-target="experience">
+                    <span class="mobile-icon">💼</span>
+                    <span class="mobile-text">EXP</span>
+                </a>
+                <a href="#projects" class="mobile-nav-link" data-target="projects">
+                    <span class="mobile-icon">💻</span>
+                    <span class="mobile-text">PROJECTS</span>
+                </a>
+                <a href="#skills" class="mobile-nav-link" data-target="skills">
+                    <span class="mobile-icon">💰</span>
+                    <span class="mobile-text">SKILLS</span>
+                </a>
+                <a href="#contact" class="mobile-nav-link" data-target="contact">
+                    <span class="mobile-icon">✉️</span>
+                    <span class="mobile-text">CONTACT</span>
+                </a>
+            </nav>
+        </footer>
+
+    </div>
+
+    <!-- Script File -->
+    <script src="script.js"></script>
+</body>
+</html>
